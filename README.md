@@ -2,7 +2,7 @@
 
 fiz esse codigo quando eu estudava sobre manipulação de arquivos .txt
 
-vou deixar as documentações abaixo
+vou deixar as documentações abaixo:
 
 https://www.programiz.com/c-programming/library-function/string.h/strcat
 
