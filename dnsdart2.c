@@ -37,7 +37,6 @@ int main(int argc, char *argv[]) {
  #####  #    #  ####     #####  #    # #    #   #
  
  Modo de uso ./dnsdart alvo.com dart.txt
-criador: soldat
 
  )EOF");
 	  return 0;
