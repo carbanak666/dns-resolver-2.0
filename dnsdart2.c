@@ -11,6 +11,7 @@
 #include <netdb.h> //biblioteca para operações de redes
 #include <string.h> //para manipuar strings
 
+
 int main(int argc, char *argv[]) {
 
     char *alvo;
@@ -26,13 +27,21 @@ int main(int argc, char *argv[]) {
 	if (argv[1] == NULL)
 	{
 	  //menu inicial
-	  printf("=================================================\n");
-	  printf("============= .. dns dart v2.0 .. ===============\n");
-	  printf("====== .. uso: ./dnsdart2 alvo.com dart.txt .. ==\n");
-	  printf("============== .. by soldat .. ==================\n");
-	  printf("=================================================\n");
+	  printf(R"EOF(
+
+ #####  #    #  ####     #####    ##   #####  ##### 
+ #    # ##   # #         #    #  #  #  #    #   #   
+ #    # # #  #  ####     #    # #    # #    #   #   
+ #    # #  # #      #    #    # ###### #####    #   
+ #    # #   ## #    #    #    # #    # #   #    #   
+ #####  #    #  ####     #####  #    # #    #   #
+ 
+ Modo de uso ./dnsdart alvo.com dart.txt
+criador: soldat
+
+ )EOF");
 	  return 0;
-	}
+}
 	while(fscanf(dart, "%s", &txt) != EOF) {
           resultado = (char *) strcat(txt, alvo); //juntando os dois arquivos
           host = gethostbyname(resultado);
